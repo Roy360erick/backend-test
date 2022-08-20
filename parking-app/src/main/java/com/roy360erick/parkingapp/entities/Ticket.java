@@ -23,6 +23,14 @@ public class Ticket {
     public Ticket() {
     }
 
+    public Ticket(ParkingHistory parkingHistory, int parkingTime, float totalAmount, boolean enabled, Date createAt) {
+        this.parkingHistory = parkingHistory;
+        this.parkingTime = parkingTime;
+        this.totalAmount = totalAmount;
+        this.enabled = enabled;
+        this.createAt = createAt;
+    }
+
     public Ticket(Long id, ParkingHistory parkingHistory, int parkingTime, float totalAmount, boolean enabled, Date createAt) {
         this.id = id;
         this.parkingHistory = parkingHistory;

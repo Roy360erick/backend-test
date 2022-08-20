@@ -19,6 +19,13 @@ public class ParkingHistory {
     public ParkingHistory() {
     }
 
+    public ParkingHistory(String carPlate) {
+        this.carPlate = carPlate;
+        this.active = true;
+        //this.startParking = new Date();
+        this.enabled = true;
+    }
+
     public ParkingHistory(Long id, String carPlate, Date startParking, Date endParking, boolean active, boolean enabled) {
         this.id = id;
         this.carPlate = carPlate;
